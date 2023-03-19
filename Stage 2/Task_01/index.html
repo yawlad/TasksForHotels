@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/36ed5ed2fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="comment_section">
+      <h2 class="comment_section_header">Комментарии</h2>
+
+      <form class="comment_form">
+        <div class="form_element">
+          <label for="name">Имя:</label>
+          <input type="text" class="comment_form_input" id="name" name="name" required >
+          <span class="error_message"></span>
+        </div>
+        <div class="form_element">
+          <label for="comment">Комментарий:</label>
+          <textarea id="comment" class="comment_form_textarea" name="comment" rows="5" required></textarea>
+          <span class="error_message"></span>
+        </div>
+        <div class="form_element">
+          <label for="date">Дата:</label>
+          <input type="datetime" class="comment_form_input" id="date" name="date" placeholder="дд.мм.гггг чч:мм">
+          <span class="error_message"></span>
+        </div>
+        <div class="form_element">
+          <button type="submit">Отправить</button>
+        </div>
+
+      </form>
+      
+      <div class="comments_container">
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
